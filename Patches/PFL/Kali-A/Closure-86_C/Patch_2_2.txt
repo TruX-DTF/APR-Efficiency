@@ -1,0 +1,11 @@
+--- /tmp/Kali_Defects4J_Closure_86/src/com/google/javascript/jscomp/NodeUtil.java	2020-06-25 20:58:59.055011390 +0800
++++ /tmp/Kali_Defects4J_Closure_86/src/com/google/javascript/jscomp/NodeUtil.java	2020-06-25 20:59:12.131011383 +0800
+@@ -2462,7 +2462,7 @@
+         // TODO(nicksantos): This needs to be changed so that it
+         // returns true iff we're sure the value was never aliased from inside
+         // the constructor (similar to callHasLocalResult)
+-        return true;
++        return false;
+       case Token.FUNCTION:
+       case Token.REGEXP:
+       case Token.ARRAYLIT:

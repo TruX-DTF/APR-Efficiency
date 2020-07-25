@@ -1,0 +1,13 @@
+--- /tmp/Kali_Defects4J_Lang_55/src/main/java/org/apache/commons/lang/time/StopWatch.java	2020-06-25 15:46:19.075022009 +0800
+n+++ /tmp/Kali_Defects4J_Lang_55/src/main/java/org/apache/commons/lang/time/StopWatch.java	2020-06-25 15:46:43.339021995 +0800
+@@ -115,7 +115,9 @@
+         if(this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED) {
+             throw new IllegalStateException("Stopwatch is not running. ");
+         }
++        if (true) {
++             return;
++        }
+            stopTime = System.currentTimeMillis();
+         this.runningState = STATE_STOPPED;
+     }
+ 

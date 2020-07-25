@@ -1,0 +1,12 @@
+--- /tmp/Kali_Defects4J_Lang_63/src/main/java/org/apache/commons/lang/time/DurationFormatUtils.java	2020-06-25 16:17:57.099020934 +0800
++++ /tmp/Kali_Defects4J_Lang_63/src/main/java/org/apache/commons/lang/time/DurationFormatUtils.java	2020-06-25 16:29:04.151020557 +0800
+@@ -303,7 +303,9 @@
+             days -= 1;
+         }
+         while (days < 0) {
++            if (false){
+             days += 31;
++            }
+ //days += 31; // TODO: Need tests to show this is bad and the new code is good.
+ // HEN: It's a tricky subject. Jan 15th to March 10th. If I count days-first it is 
+ // 1 month and 26 days, but if I count month-first then it is 1 month and 23 days.

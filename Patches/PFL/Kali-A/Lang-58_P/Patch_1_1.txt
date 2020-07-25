@@ -1,0 +1,14 @@
+--- /tmp/Kali_Defects4J_Lang_58/src/main/java/org/apache/commons/lang/math/NumberUtils.java	2020-06-25 20:14:40.979012895 +0800
++++ /tmp/Kali_Defects4J_Lang_58/src/main/java/org/apache/commons/lang/math/NumberUtils.java	2020-06-25 20:20:49.739012686 +0800
+@@ -449,10 +449,7 @@
+             switch (lastChar) {
+                 case 'l' :
+                 case 'L' :
+-                    if (dec == null
+-                        && exp == null
+-                        && isDigits(numeric.substring(1))
+-                        && (numeric.charAt(0) == '-' || Character.isDigit(numeric.charAt(0)))) {
++                    if (false) {
+                         try {
+                             return createLong(numeric);
+                         } catch (NumberFormatException nfe) {

@@ -1,0 +1,11 @@
+--- /tmp/Kali_Defects4J_Closure_3/src/com/google/javascript/rhino/jstype/NamedType.java	2020-06-25 20:25:34.594926763 +0800
++++ /tmp/Kali_Defects4J_Closure_3/src/com/google/javascript/rhino/jstype/NamedType.java	2020-06-25 20:26:31.219911367 +0800
+@@ -187,7 +187,7 @@
+     // makes more sense. Now, resolution via registry is first in order to
+     // avoid triggering the warnings built into the resolution via properties.
+     boolean resolved = resolveViaRegistry(t, enclosing);
+-    if (detectImplicitPrototypeCycle()) {
++    if (false) {
+       handleTypeCycle(t);
+     }
+ 

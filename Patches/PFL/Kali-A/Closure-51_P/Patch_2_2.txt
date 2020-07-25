@@ -1,0 +1,11 @@
+--- /tmp/Kali_Defects4J_Closure_51/src/com/google/javascript/jscomp/CodeConsumer.java	2020-06-25 21:09:46.207011024 +0800
++++ /tmp/Kali_Defects4J_Closure_51/src/com/google/javascript/jscomp/CodeConsumer.java	2020-06-25 21:10:01.003011015 +0800
+@@ -238,7 +238,7 @@
+       add(" ");
+     }
+ 
+-    if ((long) x == x) {
++    if (false) {
+       long value = (long) x;
+       long mantissa = value;
+       int exp = 0;

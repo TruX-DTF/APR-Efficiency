@@ -1,31 +1,13 @@
-diff --git a/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java b/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java
-index 67b368d..3e4ead8 100644
---- a/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java
-+++ b/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java
-@@ -14,7 +14,7 @@
-  * See the License for the specific language governing permissions and
-  * limitations under the License.
-  */
--package org.apache.commons.math3.genetics;
-+package org.apache.commons.math3.genetics;import  org.apache.commons.math3.exception.OutOfRangeException;import  org.apache.commons.math3.exception.OutOfRangeException;import  org
+diff --git a/src/main/java/org/apache/commons/math3/util/MathArrays.java b/src/main/java/org/apache/commons/math3/util/MathArrays.java
+index 325fd9430..7208bf80c 100644
+--- a/src/main/java/org/apache/commons/math3/util/MathArrays.java
++++ b/src/main/java/org/apache/commons/math3/util/MathArrays.java
+@@ -843,7 +843,7 @@ public class MathArrays {
  
- import java.util.Collections;
- import java.util.List;
-@@ -48,7 +48,7 @@ public class ElitisticListPopulation extends ListPopulation {
-                                    final int populationLimit,
-                                    final double elitismRate) {
-         super(chromosomes, populationLimit);
--        this.elitismRate = elitismRate;
-+if (elitismRate>(double)1.0){throw new OutOfRangeException(null,null,null);}if (elitismRate<(double)0.0){throw new OutOfRangeException(null,null,null);}         this.elitismRate = elitismRate;
-     }
  
-     /**
-@@ -62,7 +62,7 @@ public class ElitisticListPopulation extends ListPopulation {
-      */
-     public ElitisticListPopulation(final int populationLimit, final double elitismRate) {
-         super(populationLimit);
--        this.elitismRate = elitismRate;
-+if (elitismRate>(double)1.0){throw new OutOfRangeException(null,null,null);}if (elitismRate<(double)0.0){throw new OutOfRangeException(null,null,null);}        this.elitismRate = 
-     }
- 
-     /**
+         final double prodHighCur = prodHigh[0];
+-        double prodHighNext = prodHigh[1];
++if (len==1.0){return a[0] * b[0];}        double prodHighNext = prodHigh[1];
+         double sHighPrev = prodHighCur + prodHighNext;
+         double sPrime = sHighPrev - prodHighNext;
+         double sLowSum = (prodHighNext - (sHighPrev - sPrime)) + (prodHighCur - sPrime);

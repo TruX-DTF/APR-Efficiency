@@ -1,0 +1,11 @@
+--- /tmp/Kali_Defects4J_Closure_66/src/com/google/javascript/jscomp/TypeCheck.java	2020-06-25 21:07:13.743011110 +0800
++++ /tmp/Kali_Defects4J_Closure_66/src/com/google/javascript/jscomp/TypeCheck.java	2020-06-25 21:07:29.651011101 +0800
+@@ -511,7 +511,7 @@
+ 
+       case Token.STRING:
+         // Object literal keys are handled with OBJECTLIT
+-        if (!NodeUtil.isObjectLitKey(n, n.getParent())) {
++        if (false) {
+           ensureTyped(t, n, STRING_TYPE);
+           // Object literal keys are not typeable
+         }

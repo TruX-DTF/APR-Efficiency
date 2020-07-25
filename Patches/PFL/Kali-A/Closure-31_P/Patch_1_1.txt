@@ -1,0 +1,13 @@
+--- /tmp/Kali_Defects4J_Closure_31/src/com/google/javascript/rhino/Node.java		2018-12-01 20:13:04.194275237 -0500
++++ /tmp/Kali_Defects4J_Closure_31/patches_nc61/Patch_15/patched/tmp/Kali_Defects4J_Closure_31/src/com/google/javascript/rhino/Node.java	2018-12-01 20:17:41.365561988 -0500
+@@ -1281,9 +1281,7 @@
+       boolean staleInputs = false;
+        
+       // Check if the sources need to be re-ordered.
+-      if (options.dependencyOptions.needsManagement() &&
+-          !options.skipAllPasses &&
+-          options.closurePass) {
++      if (true) {
+         for (CompilerInput input : inputs) {
+            // Forward-declare all the provided types, so that they
+            // are not flagged even if they are dropped from the process."

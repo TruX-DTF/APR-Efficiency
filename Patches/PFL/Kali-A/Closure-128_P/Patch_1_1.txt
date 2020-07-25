@@ -1,0 +1,11 @@
+--- /tmp/Kali_Defects4J_Closure_128/src/com/google/javascript/jscomp/CodeGenerator.java	2020-06-25 20:50:48.267011668 +0800
++++ /tmp/Kali_Defects4J_Closure_128/src/com/google/javascript/jscomp/CodeGenerator.java	2020-06-25 20:52:00.135011627 +0800
+@@ -788,7 +788,7 @@
+         return false;
+       }
+     }
+-    return len > 0 && s.charAt(0) != '0';
++    return true;
+   }
+ 
+   static double getSimpleNumber(String s) {

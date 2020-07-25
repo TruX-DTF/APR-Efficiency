@@ -1,0 +1,11 @@
+--- /tmp/Kali_Defects4J_Closure_113/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java	2020-06-25 20:56:03.907011489 +0800
++++ /tmp/Kali_Defects4J_Closure_113/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java	2020-06-25 20:56:21.991011479 +0800
+@@ -326,7 +326,7 @@
+       // the checks for broken requires turned off. In these cases, we
+       // allow broken requires to be preserved by the first run to
+       // let them be caught in the subsequent run.
+-      if (provided != null) {
++      if (false) {
+         parent.detachFromParent();
+         compiler.reportCodeChange();
+       }

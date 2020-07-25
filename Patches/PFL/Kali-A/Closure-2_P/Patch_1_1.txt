@@ -1,0 +1,10 @@
+--- /tmp/Kali_Defects4J_Chart_1/source/com/google/javascript/jscomp/TypeCheck.java	2020-06-25 20:14:31.777707935 +0800
++++ /tmp/Kali_Defects4J_Chart_1/source/com/google/javascript/jscomp/TypeCheck.java	2020-06-25 20:17:10.067224662 +0800
+@@ -1571,6 +1571,7 @@
+     Set<String> currentPropertyNames;
+       // This can be the case if interfaceType is proxy to a non-existent
+       // object (which is a bad type annotation, but shouldn't crash).
++      if (true) return;
+       currentPropertyNames = implicitProto.getOwnPropertyNames();
+     for (String name : currentPropertyNames) {
+       ObjectType oType = properties.get(name);
